@@ -20,7 +20,7 @@ const Navbar = () => {
       <div>
 
       <SignedIn>
-        <UserButton />
+        <UserButton  afterSignOutUrl="/" />
       </SignedIn>
       </div>
     </nav>
