@@ -1,5 +1,5 @@
 
-import Datatable from '@/components/ui/DataTable'
+
 import React, { ReactNode } from 'react'
 
 const Rootlayout = ({children}:{children:ReactNode}) => {
