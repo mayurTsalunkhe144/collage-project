@@ -2,11 +2,11 @@
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from "next/navigation";
+
 import React from 'react'
 
 const Navbar = () => {
-  const router=useRouter()
+
 
 
   return (
