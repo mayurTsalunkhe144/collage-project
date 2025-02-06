@@ -1,9 +1,14 @@
-import { SignedIn, UserButton } from '@clerk/nextjs'
+"use client"
+import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from "next/navigation";
 import React from 'react'
 
 const Navbar = () => {
+  const router=useRouter()
+
+
   return (
     <nav className='flex justify-between fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10 '>
       <Link href='/home' className='flex items-center gap-6'>
@@ -20,8 +25,11 @@ const Navbar = () => {
       <div>
 
       <SignedIn>
-        <UserButton  afterSignOutUrl="/" />
+        <UserButton afterSwitchSessionUrl='/'/>
       </SignedIn>
+      <SignedOut>
+        
+      </SignedOut>
       </div>
     </nav>
   )
