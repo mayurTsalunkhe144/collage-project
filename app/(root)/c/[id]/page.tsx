@@ -1,8 +1,8 @@
 import React from 'react'
 
-const page = ({params}:{params:{id:string}}) => {
+const page = () => {
   return (
-    <div className=' text-white'>{params.id}</div>
+    <div>page</div>
   )
 }
 
